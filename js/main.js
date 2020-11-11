@@ -13,7 +13,7 @@ $(document).ready(function() {
         e.preventDefault();
 
         // top position relative to the document
-        var pos = $id.offset().top - 90;
+        var pos = $id.offset().top - 72;
 
         // animated top scrolling
         $('body, html').animate({
