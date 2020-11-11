@@ -122,6 +122,7 @@ input[type=text]  {
 /******* end *******/
 
 /* common class */
+.p5 {padding: 7px}
 .mt-0 {margin-top: 0 !important}
 .mr-0 {margin-right: 0 !important}
 .mb-0 {margin-bottom: 0 !important}
@@ -137,10 +138,10 @@ input[type=text]  {
 .mb-10 {margin-bottom: 10px}
 .ml-10 {margin-left: 10px}
 
-.mt-12 {margin-top: 12px}
-.mr-12 {margin-right: 12px}
-.mb-12 {margin-bottom: 12px}
-.ml-12 {margin-left: 12px}
+.mt-12 {margin-top: 12px }
+.mr-12 {margin-right: 12px }
+.mb-12 {margin-bottom: 12px }
+.ml-12 {margin-left: 12px }
 
 .mt-15 {margin-top: 15px}
 .mr-15 {margin-right: 15px}
@@ -537,7 +538,7 @@ figure,
 /* badge */
 .action-badge {
   position: absolute;
-  top: -110px;
+  top: -130px;
   left: 0;
   right: 0;
   width: 100%;
