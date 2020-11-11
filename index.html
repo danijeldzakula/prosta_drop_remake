@@ -9,7 +9,7 @@
         <!-- Favicon -->
         <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
         <!-- Style -->
         <link rel="stylesheet" href="./css/noramalize.css" />
         <link rel="stylesheet" href="./css/bootstrap.min.css" />
@@ -99,12 +99,18 @@
                         </div>
                         <!-- Product images -->
                         <div class="col-12 col-lg-3">
-                            <img class="product-image" 
-                                alt="Prosta Drops" 
-                                src="./img/product.png" />
+                            <div class="max-width">
+                                <img class="product-image" 
+                                    alt="Prosta Drops" 
+                                    src="./img/product.png" />
+
+                                <img class="intro-man"
+                                     alt="Man"
+                                     src="./img/intro.png">
+                             </div>
                         </div>
                         <!-- Form -->
-                        <div class="col-12 col-lg-5">
+                        <div class="col-12 col-lg-5 d-none d-lg-block">
                             <div class="order__form order__form--top" id="order-top">
                                 <header class="form-header">
                                     <h1 class="form-title mark-dark">
@@ -113,7 +119,9 @@
                                         <b class="nowdate" daysint></b>
                                         </span>
                                         <span class="d-block line-through">5180 RSD</span>
-                                        <span class="d-block">Za 2590 RSD*</span>
+                                        <span class="d-block">
+                                            <strong class="bolder">Za 2590 RSD*</strong>
+                                        </span>
                                     </h1>
                                 </header>
                                 <main class="form-content">
@@ -137,7 +145,7 @@
                                                 placeholder="Broj telefona"
                                                 onkeypress="return /[0-9 -\/]/i.test(event.key)" required />
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group text-center">
                                             <input 	class="btn btn-submit" 
                                                 type="submit" 
                                                 value="Poručite za 2590 RSD*" />
@@ -310,7 +318,7 @@
                                     <li>Povećava nivo testosterona, uklanja infekcije!</li>
                                 </ul>
                                 <hr class="hr">
-                                <p class="mt-20">Prirodni sastav i visoka učinkovitost prirodne pripreme dozvoljavaju nam da sa samopouzdanjem tvrdimo da je ovo br.1 proizvod za lečenje prostatitisa i povratak muškog zdravlja u kućnim uslovima u Srbiji</p>
+                                <p class="mt-20"><i class="italic-roboto">Prirodni sastav i visoka učinkovitost prirodne pripreme dozvoljavaju nam da sa samopouzdanjem tvrdimo da je ovo br.1 proizvod za lečenje prostatitisa i povratak muškog zdravlja u kućnim uslovima u Srbiji</i></p>
                             </div>
                         </div>
                     </div>
@@ -335,7 +343,9 @@
                             <div class="blockquote thumbnail b-radius-10">
                                 <figure class="thumb-img" style="background-image: url('./img/badge_naturel.png');"></figure>
                                 <main class="thumb-content">
-                                    <p>PROSTA DROPS Biljne Kapi je 100% prirodan, bezopasan i nema kontradikcija ili nuspojava. Mozete ga koristiti kod kuce i kompletno se otarasiti prostatitisa u samo jednom ciklusu kod kuće</p>
+                                    <p class="p">
+                                        <i class="italic-roboto">PROSTA DROPS Biljne Kapi je 100% prirodan, bezopasan i nema kontradikcija ili nuspojava. Mozete ga koristiti kod kuce i kompletno se otarasiti prostatitisa u samo jednom ciklusu kod kuće</i>
+                                    </p>
                                 </main>
                             </div>
                         </div>
@@ -366,7 +376,7 @@
                             </div>
                         </div>
                         <!-- Product image -->
-                        <div class="col-12 col-md-4 col-lg-6 d-flex align-items-center justify-content-center">
+                        <div class="col-12 col-md-4 col-lg-6 d-none d-md-flex align-items-center justify-content-center">
                             <img src="./img/product.png" alt="Prosta Drops" class="product-image">
                         </div>
                         <!-- Right composition -->
@@ -412,7 +422,7 @@
                     <div class="row">
                         <div class="col-12 mt-50">
                             <div class="comment-block align-items-center">
-                                <figure class="comment-img z-index-1" style="background-image: url('./img/doctor_1.png');"></figure>
+                                <figure class="comment-img z-index-1" style="background-image: url('./img/old_doctor.jpg');"></figure>
                                 <div class="comment-desc b-radius-5 box-shadow-3 z-index-1">
                                     <blockquote class="mb-10">Prostatitis je odavno prestao da bude problem i, još bitnije, kazna. Tokom cele godine koristimo prirodni preparat PROSTA DROPS Biljne Kapi da se brzo otarasimo prostatitisa i kompletno povratimo muško zdravlje.</blockquote>
                                     <p class="mb-10">Kao što je prikazano u kliničkim ispitivanjima, <strong class="strong">rezultat upotrebe PROSTA DROPSA Biljne Kapi, 98,7% muškaraca primeti pozitivan efekat</strong> (nestanak bola, zaustavljanje procesa upale, povratak normalnog mokrenja) u prvih par nedelja korišćenja.</p>
@@ -602,8 +612,8 @@
                                 <span>samo</span>
                                 <span class="nowdate" daysint></span>
                             </p>
-                            <h1 class="title d-block mark-green mt-20">
-                                <span class="mark b-radius-5 overflow-hidden">Za 2590 RSD*</span>
+                            <h1 class="title d-block mark-red mt-20">
+                                <span class="mark mark-yellow b-radius-5 overflow-hidden">Za 2590 RSD*</span>
                             </h1>
                         </div>
                         <div class="col-12 col-md-6 col-lg-4">
@@ -612,7 +622,9 @@
                                 <li>Pun ciklus je 4-8 nedelja</li>
                                 <li>Ponoviti po potrebi</li>
                             </ul>
-                            <a href="#order-bottom" class="btn btn-order">Poručite za 2590RSD!</a>
+                            <div class="text-center">
+                                <a href="#order-bottom" class="btn btn-order">Poručite za 2590RSD!</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -642,7 +654,7 @@
                                     <h2 class="title">PRIJAVA NA SAJTU</h2>
                                     <p class="p">
                                         <span>Ostavite zahtev na našem sajtu</span>
-                                        <a href="#" class="link">Pošaljite svoju prijavu</a>
+                                        <a href="#" class="link mark-green">Pošaljite svoju prijavu</a>
                                     </p>
                                 </main>
                             </div>
@@ -687,8 +699,7 @@
                     <div class="row">
                         <div class="col-12">
                             <h1 class="big-title">
-                                <span>KUPITE</span>
-                                <span class="mark-green">PREPARAT #1</span>
+                                <span>KUPITE PREPARAT #1</span>
                                 <span class="d-block">ZA BRZ OPORAVAK OD PROSTATITISA!</span>
                             </h1>
                         </div>
@@ -719,7 +730,9 @@
                                         <b class="nowdate" daysint></b>
                                         </span>
                                         <span class="d-block line-through">5180 RSD</span>
-                                        <span class="d-block">Za 2590 RSD*</span>
+                                        <span class="d-block">
+                                            <strong class="bolder">Za 2590 RSD*</strong>
+                                        </span>
                                     </h1>
                                 </header>
                                 <main class="form-content">
@@ -743,7 +756,7 @@
                                                 placeholder="Broj telefona"
                                                 onkeypress="return /[0-9 -\/]/i.test(event.key)" required />
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group text-center">
                                             <input 	class="btn btn-submit" 
                                                 type="submit" 
                                                 value="Poručite za 2590 RSD*" />

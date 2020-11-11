@@ -24,8 +24,16 @@
 /* form header */
 .order__form .form-header {
   padding: 20px 0;
+}
+
+.order__form--top .form-header {
   background: rgb(244,244,244);
-  background: linear-gradient(0deg, rgba(244,244,244,1) 0%, rgba(129,236,211,1) 100%);
+  background: linear-gradient(0deg, rgba(244,244,244,1) 0%, rgba(129,236,211,1) 100%);  
+}
+
+.order__form--bottom .form-header {
+  background: rgb(244,244,244);
+  background: linear-gradient(0deg, rgba(244,244,244,1) 0%, rgba(51,175,255,1) 100%); 
 }
 
 /* form title */
@@ -44,7 +52,7 @@
 /* form content */
 .order__form .form-content {
   position: relative;
-  padding: 30px 15px;  
+  padding: 30px;  
   background-color: #f4f4f4;
 }
 
@@ -85,6 +93,8 @@
   font-size: 20px;
   font-size: 2rem;
   width: 100%;
+  max-width: 280px;
+  margin: auto;
   text-transform: uppercase;
   background: rgb(157,208,12); /* #BDFFF3; */
   background: linear-gradient(0deg, rgba(157,208,12,1) 0%, rgba(141,189,3,1) 100%);
@@ -92,6 +102,11 @@
   font-weight: 600;
   border-radius: 3px;  
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+@media (min-width: 768px) {
+  .order__form .form .btn-submit {
+    max-width: 100%;
+  }
 }
 /******* end *******/
 
